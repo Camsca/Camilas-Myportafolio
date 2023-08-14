@@ -6,7 +6,7 @@
 
 /*body style*/
 body{
-    background-color: rgb(242, 244, 245);
+    background-color: rgb(255, 255, 255);
     color: rgb(21, 17, 17);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -16,20 +16,50 @@ body{
  
 /*header styles*/
 header {
-    background-color: rgb(243, 219, 187);
-padding: 20px;
+background-color: rgb(243, 219, 187);
+padding: 15px;
 width: 100%;
-}
+display: flex;
+justify-content: space-between;
+align-items: center;
+}/*hacer rectangular y amplio el nombre*/
 
 header h1{
-    margin-bottom : 10px; ;
+    color: rgb(209, 43, 43);
+background-color: rgb(251, 251, 251);
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 40px;
+  
+   
+  
+    
 }
 
 nav ul{
     list-style: none;
     display: flex;
     justify-content: end;
-    margin-top: 10px;
+    margin-top: 1px;
+    
+    gap : 20px;
     
 }
+/* desaparcer lineas y acentrar mas los links*/
+nav li{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    gap: 20 px;
+}
 
+nav a{
+   
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+nav a:hover{
+    color:red;
+    font-size: 18 px; /*increase font size on hover*/
+}
