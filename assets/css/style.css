@@ -65,10 +65,17 @@ nav a:hover{
 }
 
 .deco {
-    height: 200px;
+    height: 190px;
     width: 100%;
-    margin-bottom: 25px;
-background-image: url("../images/IMG_1103.JPG");
+    margin-bottom: 30px;
+background-image: url("../images/3d-render-flowing-particles-design-with-cyber-particles.jpg");
 background-size: cover;
 background-position: center;
+}
+
+.aboutme{
+display: flex;
+align-items: center; 
+padding: 20px; 
+gap: 20px;
 }
