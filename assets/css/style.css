@@ -1,3 +1,11 @@
+:root{
+    --main-color: #224974;
+    --highlight-color: #9ed7d4;
+    --hover-color: red;
+    --font-primary: Arial, Helvetica, sans-serif;
+}
+
+
 *{/*default style*/
     margin: 0;
     padding: 0%;
@@ -5,15 +13,15 @@
 }
 
 /*body style*/
-body{
-    background-color:#f4f4fe;
-    color: #224974;
-    font-family: Arial, Helvetica, sans-serif,Orkney;
+body {
+    background-color: #f4f4fe;
+    color: var(--main-color);
+    font-family: var(--font-primary);
     display: flex;
     flex-direction: column;
     min-height: auto;
-}
- 
+  }
+
 /*header styles*/
 header {
 background-color: #2d2e36;
@@ -26,9 +34,9 @@ align-items: center;
 
 header h1{
     padding: 10px;
-    color: #2d2e36;
-   background-color: #96d3d3;
-   font-family: Arial, Helvetica, sans-serif;
+    color:var(--main-color);
+   background-color: var(--highlight-color);
+   font-family: var(--highlight-color);
    font-size: 40px;
    position: relative;
    left: -2%;
@@ -57,13 +65,13 @@ nav li{
 
 nav a{
    
-    color: #9ed7d4;
+    color: var(--highlight-color);
     font-size: 20px;
     transition: color 0.3s, font-size 0.3s;
 }
 
 nav a:hover{
-    color:red;
+    color:var(--hover-color)
     font-size: 18 px; /*increase font size on hover but x alguna razon no me funciona*/
 }
 
@@ -84,7 +92,7 @@ gap: 20px;
 
 }
  h2 {
-    border-right: #224974; 
+    border-right: 1px solid var(--main-color); 
     padding: 15px;
     padding-left: 10px;
     height: 200px;
@@ -94,4 +102,12 @@ gap: 20px;
 
 .img{
     height: 80px;
+}
+
+.works{
+    display: flex;
+    align-items: center; 
+    padding: 20px; 
+    gap: 20px;
+    
 }
