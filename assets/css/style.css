@@ -6,9 +6,9 @@
 
 /*body style*/
 body{
-    background-color: rgb(255, 255, 255);
-    color: rgb(21, 17, 17);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f4f4fe;
+    color: #224974;
+    font-family: Arial, Helvetica, sans-serif,Orkney;
     display: flex;
     flex-direction: column;
     min-height: auto;
@@ -16,7 +16,7 @@ body{
  
 /*header styles*/
 header {
-background-color: rgb(243, 219, 187);
+background-color: #2d2e36;
 padding: 25px;
 width: 100%;
 display: flex;
@@ -25,10 +25,13 @@ align-items: center;
 }/*hacer rectangular y amplio el nombre*/
 
 header h1{
-    color: rgb(209, 43, 43);
-   background-color: rgb(251, 251, 251);
+    padding: 10px;
+    color: #2d2e36;
+   background-color: #96d3d3;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 40px;
+   position: relative;
+   left: -2%;
   
    
   
@@ -54,7 +57,7 @@ nav li{
 
 nav a{
    
-    color: white;
+    color: #9ed7d4;
     font-size: 20px;
     transition: color 0.3s, font-size 0.3s;
 }
@@ -68,7 +71,7 @@ nav a:hover{
     height: 190px;
     width: 100%;
     margin-bottom: 30px;
-background-image: url("../images/3d-render-flowing-particles-design-with-cyber-particles.jpg");
+     background-image: url("../images/3d-render-flowing-particles-design-with-cyber-particles.jpg");
 background-size: cover;
 background-position: center;
 }
@@ -78,13 +81,17 @@ display: flex;
 align-items: center; 
 padding: 20px; 
 gap: 20px;
+
 }
  h2 {
-        border-right: 6px solid rgb(59, 59, 202); 
-        padding: 15px;
-        padding-left: 10px;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        
-    }
+    border-right: #224974; 
+    padding: 15px;
+    padding-left: 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+ }
+
+.img{
+    height: 80px;
+}
