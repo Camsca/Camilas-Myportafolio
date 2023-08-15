@@ -50,25 +50,28 @@ header h1{
   
     
 }
-
+/*navigation styles*/
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: end;
+    justify-content:flex-end;
     margin-top: 1px;
-    
     gap : 20px;
-    
 }
-/* desaparcer lineas y acentrar mas los links*/
+    
+    
+
 nav li{
     list-style: none;
     display: flex;
     margin-top: 10px;
     gap: 20 px;
-    border-bottom: 4px solid var(--highlight-color)
-    
+    border-bottom: 4px solid var(--highlight-color);
+    transition: border-color 0.3s;
+    position: relative;
 }
+
+    
 
 nav a{
     text-decoration: none;
