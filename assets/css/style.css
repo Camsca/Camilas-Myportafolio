@@ -101,9 +101,12 @@ background-position: center;
 .de-content{
 background-color: var(--highlight-color);
  position: absolute;
- bottom: 8px;
-right: 16px;
-font-size: 18px;
+ bottom: 61%;
+ right: 8%;
+font-size: 30px;
+width: 20rem;
+padding: 7px;
+text-align: center;
 }
 
 .aboutme{
