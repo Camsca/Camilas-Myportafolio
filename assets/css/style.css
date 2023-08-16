@@ -1,7 +1,7 @@
 :root{
-    --main-color: #224974;
+    --main-color: #30333d;
     --highlight-color: #9ed7d4;
-    --hover-color: red;
+    --hover-color: rgb(155, 54, 54);
     --font-primary: Arial, Helvetica, sans-serif;
 }
 
@@ -39,8 +39,9 @@ header h1{
     padding: 10px;
     color:var(--main-color);
    background-color: var(--highlight-color);
+   text-align: right;
    font-family: var(--highlight-color);
-   font-size: 40px;
+   font-size: 50px;
    position: relative;
    left: -2%;
    width: 40%;
@@ -71,18 +72,22 @@ nav li{
     position: relative;
 }
 
-    
+   nav li:hover{ 
+    border-bottom-color: var(--hover-color); 
+
+   } 
 
 nav a{
     text-decoration: none;
     color: var(--highlight-color);
     font-size: 20px;
-    transition: color 0.3s, font-size 0.3s;
+    transition: color var(--hover-color) 0.3s, font-size 0.3s;
 }
 
 nav a:hover{
-    color:var(--hover-color)
-    font-size: 18 px; /*increase font size on hover but x alguna razon no me funciona*/
+    color:var(--hover-color);
+    font-size:18px; 
+    border-color: var(--hover-color);
 }
 
 .deco {
