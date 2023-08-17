@@ -100,18 +100,42 @@ nav a:hover{
 background-size: cover;
 background-position: center;
 }
-.de-content{
-background-color: var(--highlight-color);
- position: absolute;
- bottom: 61%;
- right: 8%;
-font-size: 30px;
-width: 20rem;
-padding: 7px;
-text-align: center;
+.container{ position: relative;
 
 }
+.deco p {
+    position: absolute;
+    width:20rem ;
+    bottom: 30%;
+    right: 5%;
+    background-color:var(--highlight-color);
+    color:var(--main-color);
+    padding: 1%;
+    font-size: 2rem;
+  }
+
+
 /*about me styles and animations*/
+.avatar{
+border-radius: 50%;
+width: 16%;
+position: absolute;
+bottom: 13%;
+left:0;
+padding-left: 1%;
+ }
+
+.aboutme .color-change {
+transition: color 0.3s ease-in-out;
+}
+
+.aboutme .color-change:hover {
+color:rgb(194, 31, 31); 
+}
+
+.aboutme .color-change:hover + .color-change {
+    color:var(--highlight-color); 
+}
 
 .aboutme{
 display: flex;
