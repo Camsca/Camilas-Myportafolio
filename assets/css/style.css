@@ -33,7 +33,9 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-}/*hacer rectangular y amplio el nombre*/
+
+}
+
 
 header h1{
     padding: 10px;
@@ -107,7 +109,9 @@ font-size: 30px;
 width: 20rem;
 padding: 7px;
 text-align: center;
+
 }
+/*about me styles and animations*/
 
 .aboutme{
 display: flex;
@@ -115,15 +119,52 @@ padding: 20px;
 gap: 20px;
 white-space:pre-line;
 
+
+}
+.aboutme .wave-emoji {
+    display: inline-block;
+    animation: waveAnimation 2s infinite;
+    transform-origin: center;
+    margin-left: 5px;
+}
+.aboutme .rocket-emoji {
+    display: inline-block;
+    animation: rocketAnimation 3s infinite;
+    transform-origin: center;
+    margin-right: 5px;
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+}
+@keyframes rocketAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
  h2 {
-    border-right: 4px solid var(--main-color); 
+    border-right: 6px solid var(--main-color); 
     padding: 15px;
     padding-left: 10px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    width: 70%;
+    text-align:right;
+   width: 30%;
+   font-size: 3rem;
+   
+   
  }
 
 .
