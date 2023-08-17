@@ -91,7 +91,7 @@ nav a:hover{
     font-size:18px; 
     border-color: var(--hover-color);
 }
-
+/* image*/
 .deco {
     height: 190px;
     width: 100%;
@@ -190,12 +190,53 @@ white-space:pre-line;
    
    
  }
-
-.
-.works{
+ /*Work styles*/
+ .work{
     display: flex;
-    align-items: center; 
-    padding: 20px; 
-    gap: 20px;
-    border: ;
+    flex-wrap: wrap;
+ }
+ .work1 {
+flex-direction: column;
+background-color: var(--highlight-color);
+max-width: 70%;
+max-height: 50%;
+  height: 200px;
+}
+
+.work-image1 {
+    width: 3%;
+    border-radius: 4px;
+    margin-left: auto;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.work-image1:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.work-column {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.work-image2{
+    width: 3%;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.work-image3 {
+    width: 3%;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.work-image2:hover,
+.work-image3:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
