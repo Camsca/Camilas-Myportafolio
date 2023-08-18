@@ -19,24 +19,18 @@ body {
     font-family: var(--font-primary);
     display: flex;
     flex-direction: column;
-    min-height: auto;
+    min-height: 100vh;
     
   }
 
 /*header styles*/
 header {
-background-color: #2d2e36;
-margin-top: -15px;
-margin-left: -9px;
-padding: 25px;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
+    background-color: #2d2e36;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-
 header h1{
     padding: 10px;
     color:var(--main-color);
@@ -48,10 +42,6 @@ header h1{
    left: -2%;
    width: 40%;
    box-shadow:  3px 3px 10px 5px rgba(0, 0, 0, 0.463);
-  
-   
-  
-    
 }
 /*navigation styles*/
 nav ul{
@@ -100,18 +90,19 @@ nav a:hover{
 background-size: cover;
 background-position: center;
 }
-.container{ position: relative;
+.container{ 
+position: relative;
 
 }
 .deco p {
-    position: absolute;
-    width:20rem ;
-    bottom: 30%;
-    right: 5%;
-    background-color:var(--highlight-color);
-    color:var(--main-color);
-    padding: 1%;
-    font-size: 2rem;
+ position: absolute;
+ width:20rem ;
+bottom: 30%;
+right: 5%;
+background-color:var(--highlight-color);
+color:var(--main-color);
+ padding: 1%;
+font-size: 2rem;
   }
 
 
@@ -245,6 +236,7 @@ text-align: center;
 .github-link,
 .twitter {
  display: inline-block;
+ margin-right: 35px;
  padding: 10px 20px;
 background-color: #333;
 color: #fff;
@@ -258,3 +250,26 @@ transition: background-color 0.3s ease;
  background-color: var(--highlight-color);
 }
 
+/*Responsive media queries*/
+/* Small screens */
+@media screen and (max-width: 576px) {
+ header h1 {
+font-size: 1.5rem;
+ }
+
+nav ul {
+ justify-content: center;
+ }
+}
+/* Medium screens */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+header h1 {
+font-size: 1.8rem;
+}
+}
+/* Large screens */
+@media screen and (min-width: 992px) {
+header h1 {
+ font-size: 2rem;
+ }
+}
